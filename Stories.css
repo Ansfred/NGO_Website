@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.imgslider{
+    background-image: url("media/stories01.jpg");
+    width: 97vw;
+    height: 85vh;
+    position: relative;
+    top: 0%;
+    left: 1%;
+    background-size: 100% 100%;
+    margin: 1vh 6vw 2em 0;
+   box-shadow: 3px 5px 1px 2px grey;
+  border-radius: 3px;
+  animation:slider 18s infinite linear;
+}
+@keyframes slider{
+  0%{
+      background-image: url("media/stories01.jpg");
+  }
+  16.67%{
+      background-image: url("media/stories02.jpg");
+  }
+  33.33%{
+      background-image: url("media/stories03.jpg");
+  }
+  50%{
+      background-image: url("media/stories04.jpg");
+  }
+  66.67%{
+      background-image: url("media/stories05.jpg");
+  }
+  100%{
+      background-image: url("media/stories04.jpg");
+  }
+}
+.heading{
+    text-align: center;
+    text-shadow: 2%;
+    margin: 0.5vh 0 2vh 0;
+    font-size: xx-large;
+}
+.container{
+    width: 90%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    left: 5%;
+}
+.card{
+    width: 23.7rem;
+    background-color: rgba(255, 246, 231, 0.301);
+    margin: 1.5rem;
+    box-shadow: 1px 2px 3px 0px grey;
+    border-radius: 9px;
+}
+.card img{
+    max-width: 100%;
+    border-radius: 9px 9px 0 0;
+}
+.card_body {
+    padding: 10px 20px;
+}
+.card_body p{
+    color: rgb(59, 59, 59);
+    font-weight: bolder;
+}
+.card_body h2{
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.card_body button{
+    outline: none;
+    padding: 10px 15px;
+    font-weight: bolder;
+    margin-top: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#more1, #more2,#more3,#more4,#more5,#more6,#more7,#more8,#more9{
+    display: none;
+}
+.card:hover{
+    transform: translate(-1%, -1%);
+}
+.card img:hover{
+    transform: scale(1.02);
+
+}
+.card_body button:hover{
+    color: white;
+    background-color: grey;
+}
+.page{
+    display: flex;
+    justify-content: center;
+}
+.page ul{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.page ul li{
+    display: inline;
+    margin: 10px 10px;
+}
+@media (max-width: 948px){
+    .card{
+        width: 90%;
+    }
+    .card img{
+        width: 100%;
+    }
+}
