@@ -1,0 +1,121 @@
+.Home_Ansfred-MainImage {
+    max-height: 70%;
+    max-width: 70%;
+    display: block;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 5px 5px rgb(190, 190, 190);
+}
+
+.HomeBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 4em;
+}
+
+.HomeBox a {
+    text-decoration: none;
+}
+
+.HomeBox1 {
+    width: 40%;
+    color: rgb(95, 95, 95);
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+
+.HomeCountriesBox {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 32px;
+    font-weight: lighter;
+    color: white;
+    background-color: rgb(59, 59, 168);
+}
+
+.HomeCountriesBox:hover {
+    color: white;
+    background-color: rgb(59, 134, 168);
+}
+.HomeBox2 {
+    width: 40%;
+    color: rgb(95, 95, 95);
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+
+.HomePeopleBox {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 32px;
+    font-weight: lighter;
+    color: white;
+    background-color: rgb(8, 190, 78);
+}
+
+.HomeBoxText {
+    padding: 1em;
+}
+
+.Accreditions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 8em;
+}
+
+.Ansfred_Accreditions_Images1 {
+    width: 50%;
+    height: 50%;
+}
+
+.Ansfred_Accreditions_Images2 {
+    width: 40%;
+    height: 40%;
+}
+
+@media only screen and (max-width: 625px) {
+    .Home_Ansfred-MainImage {
+        max-width: 95%;
+        box-shadow: none;
+    }
+
+    .HomeBox {
+        margin-top: 2em;
+    }
+
+    .HomeBox1 {
+        font-size: 14px;
+    }
+    .HomeCountriesBox {
+        font-size: 16px;
+    }
+
+    .HomeBox2 {
+        font-size: 14px;
+    }
+    .HomePeopleBox {
+        font-size: 16px;
+    }
+
+    .Accreditions {
+        margin-top: 4em;
+    }
+
+    .Ansfred_Accreditions_Images1 {
+        width: 80%;
+        height: 80%;
+    }
+    
+    .Ansfred_Accreditions_Images2 {
+        padding-top: 2em;
+        width: 60%;
+        height: 60%;
+    }
+}
