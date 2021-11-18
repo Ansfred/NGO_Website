@@ -1,0 +1,78 @@
+* {
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.Heading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.HeadingImage {
+    max-height: 80%;
+    max-width: 80%;
+    display: block;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3em;
+}
+
+.Logos-One {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: aliceblue;
+}
+
+.Heading_Secondary {
+    margin-top: 3em;
+    color: darkgreen;
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.Logos-Two {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: aliceblue;
+}
+
+.Mini_Container {
+    padding: 5px 10px;
+}
+
+.CountryPara {
+    margin: 3em 10em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 1080px) {
+    .HeadingImage {
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .CountryPara {
+        margin: 2em 2em;
+    }
+}
