@@ -29,8 +29,8 @@
 }
 
 .HomeCountriesBox {
+    height: 5em;
     text-align: center;
-    padding-top: 15px;
     font-size: 32px;
     font-weight: lighter;
     color: white;
@@ -41,6 +41,7 @@
     color: white;
     background-color: rgb(59, 134, 168);
 }
+
 .HomeBox2 {
     width: 40%;
     color: rgb(95, 95, 95);
@@ -50,8 +51,8 @@
 }
 
 .HomePeopleBox {
+    height: 5em;
     text-align: center;
-    padding-top: 15px;
     font-size: 32px;
     font-weight: lighter;
     color: white;
@@ -82,7 +83,7 @@
 
 @media only screen and (max-width: 625px) {
     .Home_Ansfred-MainImage {
-        max-width: 95%;
+        max-width: 100%;
         box-shadow: none;
     }
 
