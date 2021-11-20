@@ -1,0 +1,165 @@
+.image {
+    max-height: 80%;
+    max-width: 90%;
+    display: block;
+    
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+h1{
+    font-weight: 900;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif; 
+    
+}
+
+.container {
+    position: relative;
+    max-width: 90%;
+    max-height: 80%;
+
+    /* margin: 0 auto; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+ 
+    display: flex;
+}
+
+.container .content {
+    position: absolute;
+   
+    bottom: 0;
+
+    background: rgb(0, 0, 0);
+   
+    background: rgba(31, 51, 226, 0.781);
+   
+    color: #ffffff;
+   
+    width: 80%;
+ 
+
+    padding: 1.2rem;
+  
+    display: block;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+
+}
+
+@media only screen and (max-width:900px) {
+    .container .content {
+        position: relative;
+        display: block;
+        padding: 1.2rem;
+        
+        /* width: fit-content; */
+    }
+    .container .content h1{
+        font-size: 1rem;
+    }
+  
+    
+}
+
+@media only screen and (max-width:400px) {
+    .container .content {
+
+        display: inline;
+    }
+
+    .image {
+        margin-bottom: 0rem;
+        width: auto;
+        height: 50%;
+    }
+}
+/* div{
+    width: auto;
+    height: auto;
+} */
+@media only screen and (max-width:550px) {
+    .image {
+    max-height: 90%;
+    max-width: 90%;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0rem;
+    align-self: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.container .content h1{
+    font-size: 1rem;
+}
+.container .content {
+
+    bottom: 0;
+   
+    background: rgb(0, 0, 0);
+  
+    background: rgba(3, 57, 236, 0.473);
+
+    color: #ffffff;
+ 
+    /* width: 100%; */
+    /* max-width: 90%;
+    min-height: 90%; */
+    /* align-self: center; */
+    align-items: center;
+    display: block;
+
+   margin-left: 1rem;
+    margin-right: 0rem; 
+
+
+}
+
+.container {
+    position: relative;
+    max-width: 90%;
+    
+    margin: 0 auto;
+    display: block;
+   
+}
+} 
+
+@media only screen and (max-width:300px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .content{
+        margin-left: 0;
+        margin-right: 0;
+        font-size: small;
+    }
+}
+
+
+
+.content{
+    position: absolute;
+   
+    bottom: 0; 
+    
+
+    background: rgb(0, 0, 0);
+   
+    background: rgba(31, 51, 226, 0.781);
+   
+    color: #ffffff;
+   
+    width: 80%;
+ 
+
+    padding: 1.2rem;
+  
+    display: block;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
