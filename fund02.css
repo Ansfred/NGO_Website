@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* NAVBAR STARTS    */
+header{
+    height: 12vh;;
+    width: 100%;
+    background-color: red;
+    color: white;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo{
+    margin: 0 2vw;
+    font-size: 1.4rem;
+}
+header nav .btn{
+    margin: 0 2vw;
+}
+nav .menu-btn i{
+    font-size: 1.5rem;
+    margin-top: 1vh;
+    display: none;
+    cursor: pointer;
+}
+header nav .btn button{
+    outline: none;
+    height: 8vh;
+    width: 15vw;
+    font-size: 1.1rem;
+    background-color: gold;
+    color: white;
+    border-radius: 3px;
+    font-weight: bolder;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul li{
+    text-decoration: none;
+    margin: 4vh 1vw;
+    font-size: 1.3rem;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+header nav ul li a:hover{
+    color: yellow;
+    transition-delay: 0.1;
+}
+#click{
+    display: none;
+}
+@media (max-width: 690px){
+    header nav ul{
+        position: fixed;
+        top: 12vh;
+        left: -100%;
+        background-color: red;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        z-index: 2;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0;
+    }
+    header nav ul li{
+        margin: 10vh 0;
+        font-size: 1.4em;
+    }
+    nav .menu-btn i{
+        display: block;
+        margin-left: 3vw;
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    header nav .logo, header nav .menu-btn i, header nav .btn{
+        margin-top: 2vh;
+    }
+    header nav .btn button{
+        width: 20vw;
+        border-radius: 9px;
+    }
+}
+/* NAVBAR ENDS     */
+
+/* main part    */
+.video{
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    margin: 1.3rem;
+}
+.content01, .content02{
+    text-align: center;
+    padding: 1.2rem;
+    margin: 1.2rem;
+    border-top: 1px solid green;
+    border-bottom: 1px solid blue;
+}
+
+.content01 h3, .content02 h3{
+    margin: 1.2em 0;
+    color: green;
+    font-size: 1.7rem;
+}
+.content01 p, .content02 p {
+    padding: 1rem;
+    width: 60%;
+    position: relative;
+    left: 22%;
+    letter-spacing: 1px;
+}
+.content02 {
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+.content01 span {
+    color: blue;
+    font-size: 1.2rem;
+}
+@media (max-width: 980px ){
+    .video{
+        display: none;
+    }
+}
+/* main part    */

@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* NAVBAR STARTS    */
+header{
+    height: 12vh;;
+    width: 100%;
+    background-color: red;
+    color: white;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo{
+    margin: 0 2vw;
+    font-size: 1.4rem;
+}
+header nav .btn{
+    margin: 0 2vw;
+}
+nav .menu-btn i{
+    font-size: 1.5rem;
+    margin-top: 1vh;
+    display: none;
+    cursor: pointer;
+}
+header nav .btn button{
+    outline: none;
+    height: 8vh;
+    width: 15vw;
+    font-size: 1.1rem;
+    background-color: gold;
+    color: white;
+    border-radius: 3px;
+    font-weight: bolder;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul li{
+    text-decoration: none;
+    margin: 4vh 1vw;
+    font-size: 1.3rem;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+header nav ul li a:hover{
+    color: yellow;
+    transition-delay: 0.1;
+}
+#click{
+    display: none;
+}
+@media (max-width: 690px){
+    header nav ul{
+        position: fixed;
+        top: 12vh;
+        left: -100%;
+        background-color: red;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        z-index: 2;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0;
+    }
+    header nav ul li{
+        margin: 10vh 0;
+        font-size: 1.4em;
+    }
+    nav .menu-btn i{
+        display: block;
+        margin-left: 3vw;
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    header nav .logo, header nav .menu-btn i, header nav .btn{
+        margin-top: 2vh;
+    }
+    header nav .btn button{
+        width: 20vw;
+        border-radius: 9px;
+    }
+}
+/* NAVBAR ENDS     */
+
+/* main     */
+.home-img{
+    background-image: url("media/box02.jpg");
+    width: 100%;
+    height: 80vh;
+    background-size:  100% 100%;
+    /* background-repeat: no-repeat; */
+    margin: 1vh 6vw 2em 0;
+   box-shadow: 3px 5px 1px 2px grey;
+  border-radius: 3px;
+}
+.home-img h2, .home-img p{
+    position: relative;
+    top: 85%;
+    background-color: rgba(10, 3, 107, 0.363);
+    height: 6vh;
+    padding-left:9px ;
+    padding-top: 5px;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    color: white;
+}
+.info {
+    text-align: center;
+    width: 50vw;
+    position: relative;
+    left: 25%;
+    font-size: 1.2rem;
+}
+.info .bullets{
+    margin: 3vh;
+}
+.info .bullets i{
+    margin: 2vh;
+    color: green;
+    font-size: larger;
+}
+.info .bullets i p{
+    color: blue;
+    font-size: 1.5rem;
+    margin-top: 1.1rem;
+}
+.ideas-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 99%;
+    position: relative;
+    left: 5%;
+    background-color: red;
+    margin-bottom: 10vh;
+}
+.ideas-container .box{
+    width: 24rem;
+    height: 15rem;
+    background-color: yellow;
+    box-sizing: border-box;
+    margin: 3vh;
+    position: relative;
+}
+.ideas-container .box .img{
+    position: relative;
+    overflow: hidden;
+}
+.ideas-container .box .img img{
+    max-width: 100%;
+    height: 100%;
+    transition: transform 1.4s;
+}
+.ideas-container .box:hover .img img{
+    transform: scale(1.2);
+}
+.ideas-container .box .details{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    right: 10px;   
+    padding-bottom: 0 4px 10px 4px ;
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.ideas-container .box:hover .details{
+    transform: scaleY(1);
+}
+.ideas-container .box .details .content{
+    text-align: center;
+    color: white;
+    padding: 9px;
+}
+.ideas-container .box .details .content h4{
+    color: yellow;
+    margin-bottom: 5px;
+}
+@media (max-width: 940px){
+    .ideas-container .box{
+        width: 90%;
+        height: 40%;
+    }
+}
+@media (max-width: 435px){
+    .ideas-container .box .details{
+        /* height: 30%; */
+        position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;  
+    }
+}
+@media (max-width: 375px){
+    .ideas-container .box .details{
+        /* height: 30%; */
+        position: absolute;
+    top: 0;
+    left: 10px;
+    right: 10px;  
+    }
+}
+

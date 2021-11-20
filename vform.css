@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* NAVBAR STARTS    */
+header{
+    height: 12vh;;
+    width: 100%;
+    background-color: red;
+    color: white;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo{
+    margin: 0 2vw;
+    font-size: 1.4rem;
+}
+header nav .btn{
+    margin: 0 2vw;
+}
+nav .menu-btn i{
+    font-size: 1.5rem;
+    margin-top: 1vh;
+    display: none;
+    cursor: pointer;
+}
+header nav .btn button{
+    outline: none;
+    height: 8vh;
+    width: 15vw;
+    font-size: 1.1rem;
+    background-color: gold;
+    color: white;
+    border-radius: 3px;
+    font-weight: bolder;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul li{
+    text-decoration: none;
+    margin: 4vh 1vw;
+    font-size: 1.3rem;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+header nav ul li a:hover{
+    color: yellow;
+    transition-delay: 0.1;
+}
+#click{
+    display: none;
+}
+@media (max-width: 690px){
+    header nav ul{
+        position: fixed;
+        top: 12vh;
+        left: -100%;
+        background-color: red;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        z-index: 2;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0;
+    }
+    header nav ul li{
+        margin: 10vh 0;
+        font-size: 1.4em;
+    }
+    nav .menu-btn i{
+        display: block;
+        margin-left: 3vw;
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    header nav .logo, header nav .menu-btn i, header nav .btn{
+        margin-top: 2vh;
+    }
+    header nav .btn button{
+        width: 20vw;
+        border-radius: 9px;
+    }
+}
+/* NAVBAR ENDS     */
+
+/* form  starts   */
+main{
+    background-image: url("media/stories01.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .Nav_Links li{
+    display: inline-block;
+    padding: 0px 0.8em;
+  }
+  
+  .heading{
+    width: 60%;
+    position: relative;
+    top: 30%;
+    left: 19%;
+    text-align: center;
+    color: rgb(19, 7, 7);
+    background-color: rgb(255, 255, 0);
+    margin-top: 30px;
+    margin-bottom: 6pxs;
+   border-radius: 9px;
+  }
+  .open{
+    width: 60%;
+    height: 60%;
+    position: relative;
+    top: 30%;
+    left: 19%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.87);
+    margin: 3px;
+   border-radius: 9px;
+   padding: 10px;
+  
+  }
+  .first_name, .last_name, .pass, .email, .adhar, .contact, .address, .cpass
+  {
+    padding: 2px;
+    margin: 10px;
+    border-radius: 2px;
+    font-size: medium;
+    
+  }
+  .email{
+    width: 50%;
+  
+  }
+  .contact{
+    width: 20%;
+  }
+  .address{
+    width: 70%;
+    height: 40%;
+  }
+  .open label{
+    padding: 2px;
+    margin: 10px;
+    font-size: medium;
+  
+  }
+  .actype{
+    padding: 5px;
+    margin: 5px;
+    font-size: medium;
+  
+  }
+  .type, .type1{
+    padding: 5px;
+    margin: 5px;
+    font-size: medium;
+  
+  }
+  .button{
+    padding: 10px;
+    border-radius: 9px;
+    color: rgb(241, 245, 242);
+    background-color: rgb(44, 238, 37);
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  footer{
+    background-color: wheat;
+    text-align: center;
+  }
+  .button:hover{
+    background-color: green;
+    color: black;
+    transform: translate(-2%, -2%);
+  }
+/* form  endds    */
